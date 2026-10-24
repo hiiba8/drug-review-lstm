@@ -71,7 +71,7 @@ model.load_state_dict(best_state)
 t = evaluate(model, test_dl, device)
 print(f"TEST acc {t['acc']:.3f} | F1 macro {t['f1']:.3f}\n{t['cm']}")
 
-name = f"{a.cell}_lr{a.lr}_{a.opt}_bs{a.bs}_{a.init}"
+name = f"{a.cell}_lr{a.lr}_{a.opt}_bs{a.bs}_{a.init}" + (f"_s{a.seed}" if a.seed != 42 else "")
 if not a.sample:  # on ne garde que les vrais runs
     os.makedirs("checkpoints", exist_ok=True)
     torch.save(best_state, f"checkpoints/{name}.pt")
