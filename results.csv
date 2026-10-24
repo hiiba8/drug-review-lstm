@@ -1,0 +1,4 @@
+run,cell,lr,opt,bs,init,sample,params,val_f1,test_acc,test_f1,minutes
+vanilla_lr0.001_adam_bs64_default,vanilla,0.001,adam,64,default,1000,833667,0.2651,0.655,0.2638,0.1
+lstmp_lr0.001_adam_bs64_default,lstmp,0.001,adam,64,default,1000,808963,0.2651,0.66,0.2651,0.1
+wmc_lr0.001_adam_bs64_default,wmc,0.001,adam,64,default,1000,882819,0.2651,0.67,0.2923,0.1
