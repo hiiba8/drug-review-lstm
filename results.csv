@@ -1,4 +1,10 @@
 run,cell,lr,opt,bs,init,sample,params,val_f1,test_acc,test_f1,minutes
-vanilla_lr0.001_adam_bs64_default,vanilla,0.001,adam,64,default,1000,833667,0.2651,0.655,0.2638,0.1
-lstmp_lr0.001_adam_bs64_default,lstmp,0.001,adam,64,default,1000,808963,0.2651,0.66,0.2651,0.1
-wmc_lr0.001_adam_bs64_default,wmc,0.001,adam,64,default,1000,882819,0.2651,0.67,0.2923,0.1
+vanilla_lr0.001_adam_bs64_default,vanilla,0.001,adam,64,default,,2691971,0.7534,0.8452,0.754,34.0
+cifg_lr0.001_adam_bs64_default,cifg,0.001,adam,64,default,,2659075,0.7573,0.8492,0.7611,36.7
+lstmp_lr0.001_adam_bs64_default,lstmp,0.001,adam,64,default,,2667267,0.7495,0.8416,0.7488,39.9
+vanilla_lr0.01_adam_bs64_default,vanilla,0.01,adam,64,default,,2691971,0.5485,0.6837,0.553,34.9
+vanilla_lr0.001_rmsprop_bs64_default,vanilla,0.001,rmsprop,64,default,,2691971,0.7457,0.8422,0.7464,34.3
+vanilla_lr0.001_adam_bs128_default,vanilla,0.001,adam,128,default,,2691971,0.7314,0.8199,0.7294,17.0
+vanilla_lr0.001_adam_bs64_xavier,vanilla,0.001,adam,64,xavier,,2691971,0.7499,0.8434,0.7531,33.5
+vanilla_lr0.001_adam_bs64_default_s7,vanilla,0.001,adam,64,default,,2691971,0.7547,0.8465,0.7575,34.3
+cifg_lr0.001_adam_bs64_default_s7,cifg,0.001,adam,64,default,,2659075,0.7604,0.8491,0.7603,37.2
