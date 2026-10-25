@@ -49,4 +49,3 @@ CIFG is at least as good as the vanilla LSTM with about 25% fewer cell parameter
 
 ## Authors
 Aouami Salma, Zineb Arrami, Hiba Arbaoui, Ayyadi Marwa, Yahya Abou Elaziz, Hanae Ouazzani Amri.
-Most of the work was done together on a single machine, so commits appear under one account.
