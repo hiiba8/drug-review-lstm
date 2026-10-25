@@ -46,3 +46,7 @@ CIFG is at least as good as the vanilla LSTM with about 25% fewer cell parameter
 - Two seeds for vanilla and CIFG, one for LSTMP; hyperparameter runs use a single seed.
 - Fixed 8 epochs: validation F1 was still rising at epoch 8 for all three cells (seed 42).
 - The neutral class (9% of the data) is the hardest one (recall around 60-66%).
+
+## Authors
+Aouami Salma, Zineb Arrami, Hiba Arbaoui, Ayyadi Marwa, Yahya Abou Elaziz, Hanae Ouazzani Amri.
+Most of the work was done together on a single machine, so commits appear under one account.
