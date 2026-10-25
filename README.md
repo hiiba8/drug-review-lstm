@@ -16,6 +16,7 @@ implemented from scratch in PyTorch (`nn.Linear` only, no `nn.LSTM`).
 - `train.py`: training script (cell, lr, optimizer, batch size, init, seed)
 - `evaluate.py`: accuracy, macro F1, confusion matrix
 - `results.csv`: all runs
+- `make_figures.py`: regenerates the report figures and tables from `drug_review_experiments.ipynb` and `results.csv`
 
 ## Reproduce
 1. Put `drugsComTrain_raw.csv` and `drugsComTest_raw.csv` in `data/`
