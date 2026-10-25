@@ -25,6 +25,7 @@ implemented from scratch in PyTorch (`nn.Linear` only, no `nn.LSTM`).
 ## Setup
 Embedding 128, hidden 128, vocab 20k, max length 150, dropout 0.3, 8 epochs,
 stratified train/val split (90/10) shared by all models, model selected on validation macro F1.
+Loss: cross-entropy weighted by inverse class frequency (computed on the training set).
 
 ## Results (test set)
 
