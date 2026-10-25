@@ -24,8 +24,9 @@ implemented from scratch in PyTorch (`nn.Linear` only, no `nn.LSTM`).
 
 ## Setup
 Embedding 128, hidden 128, vocab 20k, max length 150, dropout 0.3, 8 epochs,
-stratified train/val split (90/10) shared by all models, model selected on validation macro F1.
-Loss: cross-entropy weighted by inverse class frequency (computed on the training set).
+stratified train/val split (90/10); same test set for all models, validation split depends on the seed.
+Model selected on validation macro F1. Reviews longer than 150 tokens keep their first 150 tokens.
+Loss: cross-entropy weighted by inverse class frequency (training); validation loss is unweighted.
 
 ## Results (test set)
 
@@ -43,7 +44,7 @@ CIFG is at least as good as the vanilla LSTM with about 25% fewer cell parameter
 
 ## Limitations
 - Two seeds for vanilla and CIFG, one for LSTMP; hyperparameter runs use a single seed.
-- Fixed 8 epochs: validation F1 was still rising for some runs (e.g. LSTMP, batch size 128).
+- Fixed 8 epochs: validation F1 was still rising at epoch 8 for all three cells (seed 42).
 - The neutral class (9% of the data) is the hardest one (recall around 60-66%).
 
 ## Data
